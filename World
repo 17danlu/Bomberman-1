@@ -2,6 +2,7 @@
 import java.applet.*;
 import java.io.IOException;
 import java.awt.*;
+import java.awt.even.KeyListener;
 public class World extends java.applet.Applet
 { 
 	private Image world;
