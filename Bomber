@@ -57,7 +57,7 @@ public class Bomber
 
 		int key = e.getKeyCode();
 
-		if (key == KeyEvent.VK_LEFT) {
+		if (key == KeyEvent.VK_LEFT)  {
 			dx = 0;
 		}
 
