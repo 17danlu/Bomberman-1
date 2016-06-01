@@ -9,20 +9,25 @@ public class World extends java.applet.Applet
 	private Image bomb;
 	public void init()
 	{
-//		world=getImage(getDocumentBase(),"bomberman.jpg");
+		world=getImage(getDocumentBase(),"bomberman.jpg");
 		
 		setSize(900,636);
-	}	public void start(){		Bomber bomber=new Bomber();
+	}	
+	public void start(){		
+	Bomber bomber1=new Bomber(getImage(getDocumentBase(),"Bomber1.png");
+	Bomber bomber2=new Bomber(getImage(getDocumentBase(),"Bomber2.png");
 	}
 	public void drawPictures( Graphics page)
 	{
 		page.drawImage(world,0,0,this);
-		
+		page.drawImage(bomber1,20,20,this);
+		page.drawImage(bomber2,100,100,this);
 		
 	}
 	public void paint(Graphics page)
 	{
 		drawPictures(page);
+		
 	}
 
 }
