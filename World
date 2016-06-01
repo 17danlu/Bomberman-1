@@ -1,0 +1,28 @@
+
+import java.applet.*;
+import java.io.IOException;
+import java.awt.*;
+public class World extends java.applet.Applet
+{ 
+	private Image world;
+	
+	private Image bomb;
+	public void init()
+	{
+//		world=getImage(getDocumentBase(),"bomberman.jpg");
+		
+		setSize(900,636);
+	}	public void start(){		Bomber bomber=new Bomber();
+	}
+	public void drawPictures( Graphics page)
+	{
+		page.drawImage(world,0,0,this);
+		
+		
+	}
+	public void paint(Graphics page)
+	{
+		drawPictures(page);
+	}
+
+}
